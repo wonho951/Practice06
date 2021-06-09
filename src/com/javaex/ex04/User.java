@@ -10,6 +10,7 @@ public class User {
 	//생성자
 	public User() {
 	}
+	
 	public User(String id, String password, String name) {
 		this.id = id;
 		this.password = password;
