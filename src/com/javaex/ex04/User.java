@@ -7,8 +7,8 @@ public class User {
 	protected String password;
 	protected String name;
 	
-	//생성자
-	public User() {
+	//생성자	
+	public User() { // 자식클래스가 있기때문에 디폴트 생성자 생성하는게 좋음.
 	}
 	
 	public User(String id, String password, String name) {

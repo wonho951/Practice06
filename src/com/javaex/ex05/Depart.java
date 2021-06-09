@@ -33,5 +33,5 @@ public class Depart extends Employee {
 	//메소드-일반
 	public void showInformation() {
 		System.out.println("이름:" + super.getName() + " 연봉:" + super.getSalary() + " 부서:" + department);
-	}
+	}// 부모클래스의 필드가 private이므로 super. 사용해서 부모클래스의 생성자를 불러온다.
 }
