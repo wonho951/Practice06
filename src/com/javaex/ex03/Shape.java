@@ -7,8 +7,8 @@ public class Shape {
 	protected String lineColor;
 	
 	//생성자
-	public Shape() {		
-	}
+	public Shape() {	// 상속받는 자식클래스가 있기때문에 디폴트 생성자 생성 하지 않을시에 
+	}					// 자식클래스의 생성자 생성시 문제 생긴다.
 	
 	public Shape(String fillColor, String lineColor) {
 		this.fillColor = fillColor;

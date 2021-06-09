@@ -6,7 +6,7 @@ public class MyBase extends Base{
 	public void service(String state) {
 		if (state.equals("낮")) {  // Base 상속받고 있으므로 "낮"입력시 상속받은 MyBase에 있는 day() 내용 출력
 				day();
-		} else if (state.equals("밤")){ // Base 상속받고 있으므로 "낮"입력시 상속받은 MyBase에 있는 day() 내용 출력
+		} else if (state.equals("밤")){ // Base 상속받고 있지만 "밤"입력시 자식클래스에는 day()가 없으므로 부모에 있는 day() 내용 출력
 			night();
 		}else { // Base를 상속받지만 Base에는 없는 내용이므로 MyBase에 추가해서 출력.
 			afterNoon();
@@ -19,10 +19,6 @@ public class MyBase extends Base{
 	
 	public void afterNoon() {
 		System.out.println("오후도 낮과 마찬가지로 공부해야 합니다.");
-	}
-	
-	public void night() {
-		System.out.println("밤에는 숙면");
 	}
 	
 }
