@@ -2,8 +2,7 @@ package com.javaex.ex07;
 
 public class SmartPhone extends MusicPhone {
     
-    public void execute(String str){
-        
+    public void execute(String str){        
         //코드작성
         if("앱".equals(str)){  // "앱" 입력시  app();에 있는 "앱실행"출력 
             app();
