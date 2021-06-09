@@ -4,12 +4,12 @@ public class MyBase extends Base{
 
     //코드작성
 	public void service(String state) {
-		if (state.equals("낮")) { //문자열의 같다(==) 는 equals()를 사용합니다.
+		if (state.equals("낮")) {  // Base 상속받고 있으므로 "낮"입력시 상속받은 MyBase에 있는 day() 내용 출력
 				day();
-		} else if (state.equals("밤")){
+		} else if (state.equals("밤")){ // Base 상속받고 있으므로 "낮"입력시 상속받은 MyBase에 있는 day() 내용 출력
 			night();
-		}else {
-			afternoon();
+		}else { // Base를 상속받지만 Base에는 없는 내용이므로 MyBase에 추가해서 출력.
+			afterNoon();
 		}
 	}
 
@@ -17,7 +17,7 @@ public class MyBase extends Base{
 		System.out.println("낮에는 열심히 수업듣자");
 	}
 	
-	public void afternoon() {
+	public void afterNoon() {
 		System.out.println("오후도 낮과 마찬가지로 공부해야 합니다.");
 	}
 	

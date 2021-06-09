@@ -5,9 +5,11 @@ public class Depart extends Employee {
 	 //코드작성
 
 	//필드
-	private String department;
+	private String department; 
 
-	//생성자
+	//생성자	
+	public Depart() { // 디폴트 생성자 있는편이 좋음
+	}
 	public Depart(String department) {
 		this.department = department;
 	}
